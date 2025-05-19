@@ -1,0 +1,83 @@
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+<!-- component -->
+<div class="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat" style="background-image:url('https://i.pinimg.com/originals/87/0a/f1/870af1c8d0cd23c2bc87bccc789a264d.jpg')">
+  <div class="rounded-xl bg-gray bg-opacity-50 px-16 py-10 shadow-lg backdrop-md max-sm:px-8">
+    <div class="text-white">
+      <div class="mb-8 flex flex-col items-center">
+
+      
+        <!-- Animated Chat App Logo -->
+<svg
+  width="100"
+  height="100"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="#f0f9ff" />
+
+  <!-- First Speech Bubble -->
+  <path
+    d="M60 70C60 61.7157 66.7157 55 75 55H125C133.284 55 140 61.7157 140 70V100C140 108.284 133.284 115 125 115H95L75 135V115H75C66.7157 115 60 108.284 60 100V70Z"
+    fill="#3b82f6"
+    filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))"
+  >
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Second Speech Bubble -->
+  <path
+    d="M80 90C80 81.7157 86.7157 75 95 75H145C153.284 75 160 81.7157 160 90V120C160 128.284 153.284 135 145 135H115L95 155V135H95C86.7157 135 80 128.284 80 120V90Z"
+    fill="#60a5fa"
+    filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))"
+  >
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Dots in First Bubble - with animation -->
+  <g>
+    <circle cx="85" cy="85" r="5" fill="white">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" begin="0s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="85" r="5" fill="white">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="115" cy="85" r="5" fill="white">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" begin="1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Dots in Second Bubble -->
+  <circle cx="105" cy="105" r="5" fill="white" />
+  <circle cx="120" cy="105" r="5" fill="white" />
+  <circle cx="135" cy="105" r="5" fill="white" />
+</svg>
+
+    
+        <span class="text-gray-300">Welcome</span>
+      </div>
+      <form action="#">
+      <div class="mb-4 text-lg">
+          <input class="rounded-2xl border-none bg-gray-400 bg-opacity-50 px-6 py-1 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md" type="Password" name="name" placeholder="*********" />
+        </div>
+        
+        <div class="mb-4 text-lg">
+          <input class="rounded-2xl border-none bg-gray-400 bg-opacity-50 px-6 py-1 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md" type="text" name="name" placeholder="id@email.com" />
+        </div>
+
+        <div class="mb-4 text-lg">
+          <input class="rounded-2xl border-none bg-gray-400 bg-opacity-50 px-6 py-1 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md" type="Password" name="name" placeholder="*********" />
+        </div>
+        <div class="mt-8 flex justify-center text-lg text-black">
+          <button type="submit" class="rounded-3xl bg-gray-400 bg-opacity-50 px-10 py-1 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-yellow-600">Sign up</button>
+
+        </div>
+        <p class="text-md text-center mt-6 text-stone-200">Already have an account? <a href="index.php" class="underline hover:text-gray-400 transition">Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
