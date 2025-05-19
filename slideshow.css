@@ -1,0 +1,72 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(images/picture8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+  
+.slider-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide1 50s linear infinite;
+}
+  
+.slider-track img {
+    display: inline-block;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+    transition: border-top 1.5s, height 0.15s, width 0.15s;
+}
+img:hover{
+    height: 51rem;
+    width: 51rem;
+    border-top: 1px solid gold;
+}
+  
+@keyframes slide1 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-185%); 
+    }
+}
+@keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-130%); 
+    }
+}
+@media screen and (min-width:700px){
+    .slider-track{
+        animation-name: slide2;
+    }
+}
+@media screen and (max-width:600px){
+    .slider-track{
+        animation-duration: 65s;
+    }
+}
+@media screen and (min-width:1000px){
+    .slider-track{
+        animation-name: slide1;
+    }
+}
